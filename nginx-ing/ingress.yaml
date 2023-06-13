@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: openshift-default
   rules:
-  - host: "example.apps.ocp4.redhat.poc"
+  - host: "nginx-ing.apps.ocp4.redhat.poc"
     http:
       paths:
       - path: /
