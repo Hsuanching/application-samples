@@ -1,0 +1,15 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: nginx-sample
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-sample-service
+            port:
+              number: 8080
