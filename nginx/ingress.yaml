@@ -5,7 +5,8 @@ metadata:
 spec:
   ingressClassName: openshift-default
   rules:
-  - http:
+  - host: "example.apps.cluster-dvhfl.dvhfl.sandbox2065.opentlc.com"
+    http:
       paths:
       - path: /
         pathType: Prefix
